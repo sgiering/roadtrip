@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road Trip Photo Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Road Trip</h1>
+    <p class="subtitle">A journey in photos</p>
+  </header>
+
+  <main>
+    <div class="gallery" id="gallery">
+      <!-- Photos are loaded from photos.js -->
+    </div>
+  </main>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next">&#8250;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Road Trip Gallery</p>
+  </footer>
+
+  <script src="photos.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
